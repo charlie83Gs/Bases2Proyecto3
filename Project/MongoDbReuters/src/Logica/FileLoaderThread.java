@@ -117,7 +117,7 @@ public class FileLoaderThread implements Runnable{
                     }
                     //se inserta el nuevo documento en la colecion : )
                     createdCollection.insert(newArticle);
-                    System.out.println(newArticle.toString());
+                    //System.out.println(newArticle.toString());
                 }
             
             } catch (SAXException ex) {

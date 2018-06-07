@@ -1,0 +1,21 @@
+var mapFunction2 = function() {
+                      this.PLACES.forEach(function(item){
+                      	emit(item,1);
+                      });
+                    };
+                    
+                    
+var reduceFunction2 = function(keySKU, countObjVals) {
+                     reducedVal = 0;
+
+                     return Array.sum(countObjVals);
+                  };
+                  
+
+                  
+db.Reuters.mapReduce( mapFunction2,
+                     reduceFunction2,
+                     { out:  "reduceResult" }
+                   
+                   ).find();
+
