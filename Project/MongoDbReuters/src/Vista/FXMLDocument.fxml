@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300" prefWidth="420" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.FXMLDocumentController">
+    <children>
+        <Button layoutX="140" layoutY="90" text="Selecionar Folder" onAction="#handleButtonAction" fx:id="bOpenPaht" />
+        <TextField layoutX="140" layoutY="140" fx:id="tfCollectionName" text="Reuters"/>
+        <Label layoutX="80" layoutY="143" minHeight="16" minWidth="69" text="Nombre:" />
+        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+    </children>
+</AnchorPane>
